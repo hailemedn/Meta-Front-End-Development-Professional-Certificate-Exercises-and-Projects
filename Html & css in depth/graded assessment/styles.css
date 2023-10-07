@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    padding: 2em;
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header, nav, main {
+    margin-bottom: 1em;
+}
+
+
+header img{
+    width: 80%;
+    max-width: 40em;
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: rgb(1, 20, 36);
+    margin-bottom: 6em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav a {
+    padding: 0.5em;
+    text-decoration: none;
+    color: rgb(248, 236, 167);
+    border-radius: 0.6em;
+    transition: font-size 0.4s;
+}
+
+nav a:hover {
+    color: black;
+    background-color: rgb(248, 236, 167);
+    font-size: 1.2em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 11em;
+}
+
+section {
+    padding: 1em;
+    width: 80vw;
+}
+
+section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+section h1,h2 {
+    color: rgb(229, 188, 99);
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 23em;
+    transition: height 1s;
+}
+
+#banner:hover {
+    height: 24em;
+}
+
+#banner img {
+    animation: fadein 0.2s;
+}
+
+#banner .description {
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 3em;
+}
+
+section article {
+    height: 16em;
+    width: 100%;
+    max-width: 19em;
+    transition: height 1s;
+}
+
+section article:hover {
+    height: 17em;
+}
+
+
+section p {
+    margin-bottom: 1.5em;
+    text-align: justify;
+}
+
+section a {
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: rgb(1, 20, 36);
+    background-color: rgb(248, 236, 167);
+    border-radius: 0.6em;
+    transition: font-size 0.4s;
+}
+
+section a:hover {
+    color: rgb(248, 236, 167);
+    background-color: rgb(1, 20, 36);
+    font-size: 1.3em;
+}
+
+#banner .description {
+    padding: 2em;
+    position: relative;
+    bottom: 12em;
+}
+
+.description {
+    color: rgb(219, 214, 182);
+    width: 90%;
+    position: relative;
+    bottom: 11em;
+    background-color: rgba( 0, 0, 0, 0.5) ;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 0 9px 9px rgba( 248, 236, 167, 0.2) inset;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(196, 179, 83);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+footer img {
+    width: 90%;
+    max-width: 10em;
+}
+
+footer p {
+   padding: 1em;
+   border-top: 0.01em solid;
+
+}

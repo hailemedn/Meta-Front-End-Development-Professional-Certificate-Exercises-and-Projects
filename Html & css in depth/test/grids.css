@@ -1,0 +1,57 @@
+body{
+    display: grid;
+    height: 150vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    background-color: black;
+    text-align: center;
+    padding: 2em;
+    color: aliceblue;
+}
+
+main {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 2em;
+}
+
+footer {
+    background-color: #333332;
+    text-align: center;
+    padding: 2em;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.segment{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    grid-template-rows: 100px;
+}
+
+.three{
+    background-color: antiquewhite;
+    grid-column: 1/ span 3;
+}
+
+.six {
+    background-color: aqua;
+    grid-column: 3/ span 3;
+}
+
+.nine {
+    background-color: aquamarine;
+    grid-column: 5/span 3;
+}
+
+.twelve {
+    background-color: blue;
+    grid-column: 5/span 10;
+}
