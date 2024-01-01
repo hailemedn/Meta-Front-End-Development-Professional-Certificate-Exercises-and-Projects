@@ -1,0 +1,33 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "head head"
+                         "nav main"
+                         "footer footer";
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 150px 1fr 150px;
+}
+
+header {
+    grid-area: head;
+    background-color: aqua;
+    padding: 3em;
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(55, 135, 205);
+    padding: 3em;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(197, 227, 129);
+    padding: 3em;
+}
+
+footer {
+    grid-area: footer;
+    background-color: blueviolet;
+    padding: 3em;
+}

@@ -15,14 +15,18 @@ const LandingSection = () => (
     isDarkBackground
     backgroundColor="#2A4365"
   >
-    <VStack>
-      <Avatar src="https://i.pravatar.cc/150?img=7" size='2xl'></Avatar>
-      
-      <h3>{greeting}</h3>
-      <Heading>{bio1}</Heading>
-      <Heading>{bio2}</Heading>
-      
+    {/* The UI for the landing section */}
+    <VStack spacing={16}>
+      <VStack spacing={4}>
+        <Avatar src="https://i.pravatar.cc/150?img=7" size="2xl" name="Pete" />
+        <Heading as="h4" size="md" noOfLines={1}>{greeting}</Heading>
+      </VStack>
+      <VStack spacing={6}>
+        <Heading as="h1" size="4xl" noOfLines={1}>{bio1}</Heading>
+        <Heading as="h1" size="4xl" noOfLines={1}>{bio2}</Heading>
+      </VStack>
     </VStack>
+    {/* The UI for the landing section */}
   </FullScreenSection>
 );
 
